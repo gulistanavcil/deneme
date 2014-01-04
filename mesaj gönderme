@@ -1,0 +1,8 @@
+private void OnSomeEvent(IVehicle sender, ISomeArgs args){
+
+ if((sender is Car) && (sender as Car).numWheels == 4 && (sender as Car).hasGas) 
+ {
+     (sender as Car).drive();
+ }
+
+}
